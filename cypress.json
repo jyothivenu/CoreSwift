@@ -1,0 +1,32 @@
+{
+  "defaultCommandTimeout": 10000,
+  "env": {
+    "ENV": "Production"
+  },
+  "testFiles": "**/*.feature",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "retries": {
+    "runMode": 1
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "reportFilename": "report",
+    "overwrite": true,
+    "html": true,
+    "json": true,
+    "charts": true
+  },
+  "video": false,
+  "experimentalSessionAndOrigin": false,
+  "integrationFolder": "cypress/integration",
+  "ignoreTestFiles": [
+    "*.js",
+    "*.md"
+  ],
+  "requestTimeout": 30000,
+  "numTestsKeptInMemory": 0,
+  "responseTimeout": 50000,
+  "pageLoadTimeout": 100000
+}
